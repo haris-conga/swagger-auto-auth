@@ -3,8 +3,13 @@
   "name": "Swagger Token Injector",
   "version": "1.0",
   "description": "Injects Bearer Token from configured URL into Swagger UI.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "action": {
-    "default_popup": "popup.html"
+    "default_icon": "icon.png"
   },
   "background": {
     "service_worker": "background.js",
