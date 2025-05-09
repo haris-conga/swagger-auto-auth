@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Swagger Token Injector",
+  "version": "1.0",
+  "description": "Injects Bearer Token from configured URL into Swagger UI.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "tabs",
+    "scripting",
+    "storage",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [{
+    "resources": ["inject.js"],
+    "matches": ["<all_urls>"]
+  }]
+}
